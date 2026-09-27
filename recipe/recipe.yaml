@@ -35,7 +35,8 @@ requirements:
     - python-frontmatter >=1.0.0
     - llm >=0.28
     - llm-github-models >=0.18.0
-    - tomli >=1.2.0
+    - if: python < "3.11"
+      then: tomli >=1.2.0
     - toml >=0.10.2
     - tomlkit >=0.13
     - rich >=13.0.0
